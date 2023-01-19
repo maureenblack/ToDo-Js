@@ -1,24 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.form{
-  color: rgb(234, 228, 228);
-}
 body {
-  font-family: "Poppins", sans-serif;
+  /* padding-top:50px; */
+   color: #707070;
+  background-color: #E1E1E1;
 }
 
-.container {
-  max-width: 1050px;
-  width: 90%;
-  margin: auto;
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 250px;
+  width: 0;
+
 }
 
 .navbar {
+  background-color: #076FB4;
   width: 100%;
   box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
@@ -86,7 +89,7 @@ body {
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #0e2431;
+  background: white;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -140,4 +143,54 @@ body {
 
 .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.content {
+  position: relative;
+}
+
+.task {
+  background-color: #EEF8FF;
+  position: relative;
+}
+
+.task::after {
+  content: "";
+  height: 40px;
+  width: 50px;
+  position: absolute;
+  background-image: url("Images/Path 18.svg");
+  background-repeat: no-repeat;
+  top: 100%;
+  left: .4%;
+  background-size: contain;
+}
+
+.subtask {
+  background-color: #F6F6F6;
+}
+.add{
+  background-color: #FFFFFF;
+  width: 88px;
+  height: 88px;
+  position: fixed;
+  bottom: 10%;
+right: 28%;
+z-index: 300;
+}
+.details {
+  background-color: white;
+  height: 100vh;
+}
+
+.ffield {
+  position: relative;
+  border: 1px solid white;
+}
+
+.search-icon {
 }
