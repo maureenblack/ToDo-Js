@@ -185,6 +185,7 @@ z-index: 300;
 .details {
   background-color: white;
   height: 100vh;
+  font-size: 16px;
 }
 
 .ffield {
@@ -192,5 +193,39 @@ z-index: 300;
   border: 1px solid white;
 }
 
-.search-icon {
+.form-control:focus {
+  border: none;
+  outline: none;
+}
+.items{
+ 
+  background-color: #F6F6F6;
+}
+a:hover{
+ background-color: #E1E1E1;
+ color: #707070;
+ text-decoration: none;
+}
+ li{
+  background-color: #FFFFFF;
+  list-style: none; 
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+
+ }
+  li:hover{
+    background-color:  #E1E1E1;
+    color: #707070;
+    text-decoration: none;
+
+  }
+
+a{
+  color: #707070;
+  text-decoration: none;
 }

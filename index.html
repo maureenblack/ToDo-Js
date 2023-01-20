@@ -13,8 +13,7 @@
 
 <body>
   <nav class="navbar d-flex justify-content-between ">
-
-    <div class="nav-container">
+    <div class="nav-container p-2 me-auto">
       <input class="checkbox" type="checkbox" name="" id="" />
       <div class="hamburger-lines">
         <span class="line line1"></span>
@@ -34,16 +33,22 @@
         <input class="form-control border-0 text-light bg-transparent" type="search">
         <img class="search-icon" src="/Images/search.svg">
       </div>
-
       <!-- <i class="align-content-center">
       </i> -->
       <img class="mx-3" src="/Images/notification-solid-badged.svg">
       <img class="mx-3 m-1" src="/Images/person-circle.svg">
     </form>
   </nav>
-  <div class="main container-fluid p-0">
+  <div class="main container-fluid p-3">
     <div class="col-12 p-0 m-0 row">
-      <main class="content p-4 col-9">
+      <nav class="items col-md-3 col-sm-1">
+        <li><a href="#">Today's task</a></li>
+        <li><a href="#">Tomorrow</a></li>
+        <li><a href="#">Archived</a></li>
+        <li><a href="#">Important</a></li>
+        <li><a href="#">Completed</a></li>
+      </nav>
+      <main class="content ps-5 pt-3 pe-4 col-6 mx-auto">
         <div class="row">
           <div class="col-12 task row justify-content-between p-3 rounded-3">
             <div class="col-9">
