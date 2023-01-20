@@ -2,6 +2,7 @@ body {
   /* padding-top:50px; */
    color: #707070;
   background-color: #E1E1E1;
+  width: fit-content;
 }
 
 #wrapper {

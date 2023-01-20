@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,17 +9,16 @@
   <link rel="stylesheet" href="styles.css">
   <title>ToDo Js</title>
 </head>
-
-<body>
-  <nav class="navbar d-flex justify-content-between ">
-    <div class="nav-container p-2 me-auto">
+<header class="content pe-2 ps-2">
+  <nav class="col-md-6 col-lg-12 col-sm-12 navbar d-flex justify-content-between ">
+    <div class="nav-container p-2 me-auto col-sm-6">
       <input class="checkbox" type="checkbox" name="" id="" />
-      <div class="hamburger-lines">
+      <div class="col-sm-12 col-md-3 hamburger-lines">
         <span class="line line1"></span>
         <span class="line line2"></span>
         <span class="line line3"></span>
       </div>
-      <div class="menu-items">
+      <div class="menu-items col-md-6">
         <li><a href="#">Today's task</a></li>
         <li><a href="#">Tomorrow</a></li>
         <li><a href="#">Archived</a></li>
@@ -28,18 +26,20 @@
         <li><a href="#">Completed</a></li>
       </div>
     </div>
-    <form class="form d-flex py-3">
+    <form class="col-md-6 col-sm-2 form d-flex py-3">
       <div class="ffield me-5 px-3 rounded-5 d-flex align-items-center">
         <input class="form-control border-0 text-light bg-transparent" type="search">
         <img class="search-icon" src="/Images/search.svg">
       </div>
-      <!-- <i class="align-content-center">
-      </i> -->
+     
       <img class="mx-3" src="/Images/notification-solid-badged.svg">
       <img class="mx-3 m-1" src="/Images/person-circle.svg">
     </form>
   </nav>
-  <div class="main container-fluid p-3">
+</header>
+<body>
+  
+  <div class="main content pe-2 ps-2 ">
     <div class="col-12 p-0 m-0 row">
       <nav class="items col-md-3 col-sm-1">
         <li><a href="#">Today's task</a></li>
@@ -221,7 +221,6 @@
             </div>
           </div>
         </div>
-
         <button class="add
         rounded-circle border-0 shadow-lg">
           <img class="plus" src="/Images/Group 2.svg" alt="">
